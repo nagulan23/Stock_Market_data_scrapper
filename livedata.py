@@ -37,7 +37,7 @@ for j in range(len(matrix[0])):
     print(matrix[0][j][0])
 print("--------------------------------------Data will be displayed once every 1 minute. Please wait !")
 while(True):#2 inutes interval getting data
-    if(time.time()-t1>=10):
+    if(time.time()-t1>=60):
         t1=time.time()#initializing time for next 2 minutes
         get_data(1)#second data after 2 minutes
         for j in range(len(matrix[0])):
